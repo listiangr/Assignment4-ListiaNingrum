@@ -1,6 +1,6 @@
 # Assignment 4 - Automation Testing
 
-Project ini dibuat untuk memenuhi **Assignment 4 AfterOffice** dengan implementasi automation testing menggunakan **Cypress**.
+Project ini dibuat untuk memenuhi **Assignment 4** dengan implementasi automation testing menggunakan **Cypress**.
 
 Automation testing pada project ini mencakup:
 
@@ -37,10 +37,10 @@ https://api-script-labs.hendri.me/api-docs/
 cypress/
 └── e2e/
     ├── api/
-    │   └── ...
+    │   └── labs.cy.js
     └── ui/
-        ├── login-ui.cy.js
-        └── crud-labs.cy.js
+        ├── crud-labs.cy.js
+        └── login-ui.cy.js
 ```
 
 ---
@@ -78,12 +78,6 @@ Credential yang digunakan untuk pengujian:
 Email    : standard_user@example.com
 Password : script_sauce
 ```
-
-Pada skenario login berhasil dilakukan validasi terhadap beberapa elemen setelah login, seperti:
-
-- Greeting user
-- Tombol Logout
-- Halaman Product Shop
 
 ---
 
@@ -138,29 +132,6 @@ dan jalankan test yang tersedia.
 
 ---
 
-## Menjalankan UI Testing
-
-### Login Testing
-
-```bash
-npx cypress run --spec "cypress/e2e/ui/login-ui.cy.js"
-```
-
-### CRUD Testing
-
-```bash
-npx cypress run --spec "cypress/e2e/ui/crud-labs.cy.js"
-```
-
----
-
-## Menjalankan Seluruh Testing
-
-```bash
-npx cypress run
-```
-
----
 
 ## Test Coverage
 
